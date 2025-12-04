@@ -10,7 +10,7 @@ async function connectDB() {
   await client.connect();
 
   db = client.db("eduselect"); // <-- use your database name here
-  console.log("✅ Connected to MongoDB Atlas");
+  console.log("Connected to MongoDB Atlas");
 
   return db;
 }
