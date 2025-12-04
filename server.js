@@ -24,3 +24,9 @@ app.get("/", (req, res) => res.send("Eduselect backend is running"));
     }
 })();
 
+const lessonsRoutes = require ("./routes/lessons");
+const ordersRoutes = require ("./routes/orders");
+
+// After middleware 
+app.use("/lessons", lessonsRoutes);
+app.use("/orders", ordersRoutes);
