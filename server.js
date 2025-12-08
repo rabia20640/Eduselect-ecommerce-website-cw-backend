@@ -13,7 +13,11 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 const corsOptions = {
-  origin: "http://localhost:5173",
+  origin: [
+    "http://localhost:5173",
+    "http://localhost:5174",
+    "https://eduselect-ecommerce-website-cw-backend.onrender.com",
+  ],
   methods: ["GET", "POST", "PUT"],
   allowedHeaders: ["Content-Type"],
 };
