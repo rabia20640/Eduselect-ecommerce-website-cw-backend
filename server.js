@@ -42,7 +42,7 @@ app.use(errorHandler);
   }
 })();
 
-// Graceful shutdown
+// shutdown
 process.on("SIGINT", async () => {
   await closeDB();
   process.exit(0);
